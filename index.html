@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17201c">
+  <title>RUSH HOUR / Carrera de bolsillo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="machine" aria-label="Consola Pocket Racer">
+    <header class="brand-row">
+      <h1 class="brand">RUSH HOUR <span style="color:var(--accent)">//</span> 08</h1>
+      <span class="edition">EDICIÓN DE BOLSILLO</span>
+    </header>
+    <section class="screen-frame" aria-label="Pantalla de juego">
+      <div class="score-row">
+        <span>Puntos <strong class="score-value" id="score">00000</strong></span>
+        <span>Récord <strong class="score-value" id="best">00000</strong></span>
+        <span>Vel. <strong class="speed-value" id="speed">01</strong> km/h</span>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="320" height="440" aria-label="Juego de esquivar autos"></canvas>
+        <div class="scanlines"></div>
+      </div>
+    </section>
+    <div class="controls-row">
+      <div class="dpad" aria-label="Dirección">
+        <button class="arrow" id="left" aria-label="Mover a la izquierda">◀</button>
+        <button class="arrow" id="right" aria-label="Mover a la derecha">▶</button>
+      </div>
+      <button class="action-button" id="action">INICIAR</button>
+    </div>
+    <footer class="footer-row">
+      <span><span class="lamp">●</span> 1 JUGADOR</span>
+      <span>← → / A D MOVER · P PAUSAR</span>
+    </footer>
+  </main>
+
+  <script src="js/game.js" defer></script>
+</body>
+</html>
